@@ -1,7 +1,8 @@
 /*font-family: "Playfair Display", serif;
   font-family: "Poppins", sans-serif;*/
 :root {
-  --contact-color: #6c63ff;
+  --background-color: #f4fffc;
+  --button-color: #6c63ff;
   --secondary-color: #f9f7fe;
 
   --heading-font-family: "Playfair Display", serif;
@@ -10,9 +11,11 @@
 body {
   font-family: var(--default-font-family);
   margin: 0;
+  background-color: var(--background-color);
 }
 h1,
 h3,
+h2,
 h4,
 h5,
 h6 {
@@ -22,13 +25,26 @@ h6 {
 }
 h1 {
   font-size: 96px;
+  line-height: 1.5;
+}
+h2 {
+  font-size: 54px;
 }
 p {
-  font-family: var(--default-font-family);
+  font-size: 15px;
   font-weight: normal;
+  line-height: 30px;
+}
+.container-hero {
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.575);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 0 50px;
 }
 .hero {
-  background: var(--secondary-color);
   text-align: center;
   padding: 160px 20px;
 }
@@ -39,17 +55,43 @@ p {
   margin: 0;
 }
 .hero h2 {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--heading-font-family);
   font-size: 24px;
-  line-height: 2;
+  line-height: 1.5;
   font-weight: normal;
   color: #272142;
 }
 .btn-contact {
-  background-color: var(--contact-color);
+  background-color: var(--button-color);
   border-radius: 4px;
   color: white;
   font-size: 18px;
   line-height: 27px;
   padding: 15px 30px;
+}
+.btn-learn-more {
+  color: var(--button-color);
+  border: 1px solid var(--button-color);
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+}
+.project-description {
+  padding: 120px 60px;
+}
+@media (max-width: 900px) {
+  h1 {
+    font-size: 40px;
+    line-height: 2;
+  }
+  h2 {
+    font-size: 44px;
+  }
+  .hero {
+    padding: 120px 20px;
+  }
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
 }
