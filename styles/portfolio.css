@@ -61,18 +61,26 @@ p {
   font-weight: normal;
   color: #272142;
 }
-.about-section {
+.content {
   padding: 160px 20px;
 }
-.about-section h1 {
+.content h1 {
   font-size: 64px;
   line-height: 80px;
 }
-.about-section h2 {
+.content h2 {
   font-family: var(--default-font-family);
   font-size: 18px;
 }
-.about-section-content {
+.content h3 {
+  font-family: var(--default-font-family);
+  font-size: 24px;
+  line-height: 1.5;
+}
+.content p {
+  font-size: 14px;
+}
+.content {
   margin: 30px;
 }
 .personal {
@@ -107,7 +115,7 @@ p {
   .hero {
     padding: 120px 20px;
   }
-  .about-section {
+  .content {
     text-align: center;
     padding: 0;
   }
