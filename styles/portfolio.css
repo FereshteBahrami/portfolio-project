@@ -1,7 +1,7 @@
 /*font-family: "Playfair Display", serif;
   font-family: "Poppins", sans-serif;*/
 :root {
-  --background-color: #f4fffc;
+  --background-color: linear-gradient(-225deg, #e3fdf5 0%, #ffe6fa 100%);
   --branding-color: #6c63ff;
   --secondary-color: #f9f7fe;
 
@@ -12,7 +12,47 @@
 body {
   font-family: var(--default-font-family);
   margin: 0;
-  background-color: var(--background-color);
+
+  background: var(--background-color);
+
+  background-size: 200% 200%;
+
+  -webkit-animation: Animation 5s ease infinite;
+  -moz-animation: Animation 5s ease infinite;
+  animation: Animation 5s ease infinite;
+}
+@-webkit-keyframes Animation {
+  0% {
+    background-position: 10% 0%;
+  }
+  50% {
+    background-position: 91% 100%;
+  }
+  100% {
+    background-position: 10% 0%;
+  }
+}
+@-moz-keyframes Animation {
+  0% {
+    background-position: 10% 0%;
+  }
+  50% {
+    background-position: 91% 100%;
+  }
+  100% {
+    background-position: 10% 0%;
+  }
+}
+@keyframes Animation {
+  0% {
+    background-position: 10% 0%;
+  }
+  50% {
+    background-position: 91% 100%;
+  }
+  100% {
+    background-position: 10% 0%;
+  }
 }
 h1,
 h3,
@@ -30,7 +70,7 @@ h1 {
 h2 {
   font-size: 54px;
 }
-h4 {
+h3 {
   font-size: 48px;
 }
 h6 {
@@ -53,7 +93,7 @@ p {
 }
 .hero {
   text-align: center;
-  padding: 160px 20px;
+  padding: 80px 20px;
 }
 .hero p {
   font-family: var(--default-font-family);
@@ -69,7 +109,7 @@ p {
   color: #272142;
 }
 .content-container {
-  padding: 160px 20px;
+  padding: 60px 20px;
 }
 .content-container h1 {
   font-size: 64px;
@@ -178,12 +218,10 @@ footer .social-links a:hover {
   h2 {
     font-size: 44px;
   }
-  h4 {
+  h3 {
     font-size: 18px;
   }
-  .hero {
-    padding: 120px 20px;
-  }
+
   .content-container {
     text-align: center;
     padding: 0;
